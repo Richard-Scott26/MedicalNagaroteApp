@@ -1,0 +1,25 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+
+    <ion-grid fixed>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="12" sizeMd="6">
+
+          <ion-segment [(ngModel)]="currentStep" [selectOnFocus]="true">
+            <ion-segment-button value="1">
+              Paso 1
+            </ion-segment-button>
+            <ion-segment-button value="2">
+              Paso 2
+            </ion-segment-button>
+            <ion-segment-button value="3">
+              Paso 3
+            </ion-segment-button>
+          </ion-segment>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-toolbar>
+</ion-header>

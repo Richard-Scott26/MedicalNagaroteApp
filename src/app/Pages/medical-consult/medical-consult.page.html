@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>MedCon-Nagarote</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-grid fixed>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11" sizeMd="6">
+        <p>es de muy facil uso y te lo vamos a demostrar paso a paso:</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11" sizeMd="6">
+        <strong>Paso 0:</strong>
+        <p>Tienes que hacer click en el boton  
+          <button class="btnInfo">
+            <ion-icon name="add"></ion-icon>
+        </button> que esta
+        ubicado en la parte de abajo a la derecha de la pantalla
+        el cual te dirigira el apartado de solicitud de informacion.
+      </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11" sizeMd="6">
+        <strong>Paso 1: </strong>
+        <p>Ingrese su informacion personal.</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11" sizeMd="6">
+        <strong>Paso 2: </strong><br>
+        <p>Selecciona si tienes algun tipo de historial medico sobre enfermedades 
+          que padezcas. Si la respuesta es positiva se te pedira detalles de la 
+          enfermedad que tendras que rellenar, sino solamente lo omites.
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11" sizeMd="6">
+        <strong>Paso 3: </strong><br>
+        <p>Ingresas la informacion solicitada sobre tus sintomas actuales y mas 
+          acontecimientos de los cuales te daremos respuestas.
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--Boton + para realizar consulta-->
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="NavigateTo()" id="open-modal" expand="block">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

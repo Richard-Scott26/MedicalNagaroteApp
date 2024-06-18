@@ -1,0 +1,45 @@
+<ion-content>
+  <app-steps-header currentStep="2"></app-steps-header>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="cancel()">Volver</ion-button>
+      </ion-buttons>
+      <ion-title>Informacion Personal</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="confirm()" [strong]="true"> Omitir </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid fixed>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" sizeMd="6">
+        <h2>Enfermedades </h2>
+
+        <form [formGroup]="formuser">
+          <div class="contenedor_inputs">
+            <!--name-->
+            <ion-item fill="solid">
+              <ion-label position="floating">Nombre Enfermedad</ion-label>
+              <ion-input formControlName="name"> </ion-input>
+            </ion-item>
+            <!--lastname-->
+            <ion-item fill="solid">
+              <ion-label position="floating">cuanto tiempo</ion-label>
+              <ion-input formControlName="sickTime"> </ion-input>
+            </ion-item>
+            <!--age-->
+            <ion-item fill="solid">
+              <ion-label position="floating">Severidad</ion-label>
+              <ion-input formControlName="severityLevel"></ion-input>
+            </ion-item>
+          </div>
+        </form>
+  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

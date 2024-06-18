@@ -1,0 +1,22 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <ion-title>Nagarote</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed>
+    <ion-row class="ion-justify-content-start">
+      <ion-col size="12" sizeMd="4" *ngFor="let item of reviews; let i = index">
+        <app-cards 
+        class="card"
+        (click)="AbrirModal(i)"
+        [title]="item.title"
+        [description]="item.description"
+        [img]="item.img"
+        >
+        </app-cards>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

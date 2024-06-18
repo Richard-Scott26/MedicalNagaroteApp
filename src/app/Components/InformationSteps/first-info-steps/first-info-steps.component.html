@@ -1,0 +1,55 @@
+<ion-content>
+  <app-steps-header></app-steps-header>
+  
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="cancel()">Cancel</ion-button>
+      </ion-buttons>
+      <ion-title>Informacion Personal</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="confirm()" [strong]="true"> Siguiente </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid fixed>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" sizeMd="6">
+  
+        <form [formGroup]="formuser">
+          <div class="contenedor_inputs">
+            <!--name-->
+            <ion-item fill="solid" id="name">
+              <ion-label position="floating">Name</ion-label>
+              <ion-input formControlName="name"> </ion-input>
+            </ion-item>
+            <!--lastname-->
+            <ion-item fill="solid">
+              <ion-label position="floating">LastName</ion-label>
+              <ion-input formControlName="lastName"> </ion-input>
+            </ion-item>
+            <!--age-->
+            <ion-item fill="solid">
+              <ion-label position="floating">Age</ion-label>
+              <ion-input formControlName="age"></ion-input>
+            </ion-item>
+            <!--gender-->
+            <ion-item fill="solid">
+              <ion-label position="floating">Gender</ion-label>
+              <ion-input formControlName="gender"></ion-input>
+            </ion-item>
+            <!--phone-->
+            <ion-item fill="solid">
+              <ion-label position="floating">Phone</ion-label>
+              <ion-input formControlName="phone"></ion-input>
+            </ion-item>
+
+          </div>
+        </form>
+  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

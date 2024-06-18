@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-button slot="start" fill="clear" (click)="Cerrar()" style="color: #fff;">
+        <ion-icon name="chevron-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{customData.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content
+  [scrollEvents]="true"
+  (ionScrollStart)="handleScrollStart()"
+  (ionScroll)="handleScroll($any($event))"
+  (ionScrollEnd)="handleScrollEnd()"
+  class="ion-padding background-white"
+>
+  <h1>{{customData.title}}</h1>
+
+  <p>{{customData.context}}</p>
+  <p>{{customData.references}}</p>
+</ion-content>

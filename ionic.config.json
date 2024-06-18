@@ -1,0 +1,7 @@
+{
+  "name": "MedicalSistemNagarote",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
